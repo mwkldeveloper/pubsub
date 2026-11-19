@@ -1,0 +1,19 @@
+{
+  "name": "n8n-nodes-font2art-pubsub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Google Pub/Sub trigger and publish for n8n. Does not create topics or subscriptions.",
+  "scripts": {
+    "check": "node lib/check.js"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "nodes/GooglePubSub/GooglePubSub.node.js",
+      "nodes/GooglePubSub/GooglePubSubTrigger.node.js"
+    ]
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^6.4.1"
+  }
+}
